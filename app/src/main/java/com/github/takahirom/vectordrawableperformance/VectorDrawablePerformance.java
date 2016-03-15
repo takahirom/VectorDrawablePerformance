@@ -73,7 +73,7 @@ public class VectorDrawablePerformance extends Activity {
         time =  android.os.SystemClock.currentThreadTimeMillis();
         for (int i = 0; i < icon.length; i++) {
             ImageView image = new AppCompatImageView(this);
-            image.setBackgroundResource(icon[i]);
+            image.setImageResource(icon[i]);
             container.addView(image,layoutParams);
         }
         setContentView(scrollView);
